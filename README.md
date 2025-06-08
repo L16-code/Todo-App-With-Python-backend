@@ -27,7 +27,7 @@ Sanic allows for asynchronous request handling, making it ideal for I/O-bound ap
 
 ### Prerequisites
 
-- Python 3.7+
+- Python 3.7.10
 - pip (Python package manager)
 
 ## 🚦 Getting Started
@@ -92,8 +92,11 @@ The server will start on `http://localhost:8000`.
 ```
 sanic-boilerplate/
 ├── main.py          # Main application file with route definitions
+├── db_setup.py      # Database initialization script (SQLite)
+├── todos.db         # SQLite database (created after running db_setup.py)
 ├── requirements.txt # Project dependencies
 └── README.md        # Project documentation
+
 ```
 
 ### Endpoints
@@ -120,5 +123,8 @@ If you have any questions or run into issues, please:
 2. Open an issue in this repository
 
 ---
+## Database Setup
+python db_setup.py
+
 
 **Happy coding!** 🎉 
